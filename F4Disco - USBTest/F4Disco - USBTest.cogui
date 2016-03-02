@@ -11,21 +11,19 @@
 <folder appearance="1" expanded="2">
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
 <part id="0"/>
-<part id="1"/>
 </presentation>
 </folder>
 </info>
 </editorArea>
-<editor activePart="true" focus="true" id="org.eclipse.cdt.ui.editor.CEditor" name="main.c" partName="main.c" path="Z:/GITHUB/Coocox/F4Disco - USBTest/app/main.c" title="main.c" tooltip="Z:/GITHUB/Coocox/F4Disco - USBTest/app/main.c" workbook="DefaultEditorWorkbook">
+<editor activePart="true" focus="true" id="org.eclipse.cdt.ui.editor.CEditor" name="main.c" partName="main.c" path="//vmware-host/Shared Folders/GITHUB/Coocox/F4Disco - USBTest/app/main.c" title="main.c" tooltip="//vmware-host/Shared Folders/GITHUB/Coocox/F4Disco - USBTest/app/main.c" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/F4Disco - USBTest/main.c"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="848" selectionTopPixel="61"/>
-</editor>
-<editor id="org.eclipse.cdt.ui.editor.CEditor" name="stm32f4xx_hal_rcc.h" partName="stm32f4xx_hal_rcc.h" path="Z:/GITHUB/Coocox/F4Disco - USBTest/components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_hal_rcc.h" title="stm32f4xx_hal_rcc.h" tooltip="Z:/GITHUB/Coocox/F4Disco - USBTest/components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_hal_rcc.h" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/F4Disco - USBTest/components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal_rcc.h"/>
-<editorState selectionHorizontalPixel="0" selectionLength="18" selectionOffset="24516" selectionTopPixel="8370"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="2297" selectionTopPixel="758"/>
 </editor>
 </editors>
 <views>
+<view id="org.eclipse.ui.navigator.ProjectExplorer" partName="Project Explorer">
+<viewState CommonNavigator.LINKING_ENABLED="0" org.eclipse.cdt.ui.cview.groupincludes="false" org.eclipse.cdt.ui.cview.groupmacros="false" org.eclipse.cdt.ui.editor.CUChildren="true" org.eclipse.ui.navigator.resources.workingSets.showTopLevelWorkingSets="0"/>
+</view>
 <view id="org.eclipse.ui.views.ProgressView" partName="Progress">
 <viewState/>
 </view>
@@ -34,15 +32,25 @@
 <expanded>
 <element path="/F4Disco - USBTest"/>
 <element path="/F4Disco - USBTest/components"/>
-<element path="/F4Disco - USBTest/components/STM32F407xx_cmsisboot"/>
+<element path="/F4Disco - USBTest/syscalls"/>
+<element path="/F4Disco - USBTest/usbdevice"/>
 </expanded>
 <selection>
 <element path="/F4Disco - USBTest"/>
 </selection>
 </viewState>
 </view>
+<view id="org.eclipse.search.ui.views.SearchView" partName="Search">
+<viewState isPinned="false">
+<view IMemento.internal.id="" org.eclipse.search.lastActivation="0"/>
+<view IMemento.internal.id="org.eclipse.cdt.ui.pdomSearchViewPage" definitionColumnWidth="150" locationColumnWidth="300" matchColumnWidth="300" org.eclipse.search.lastActivation="1" org.eclipse.search.resultpage.layout="2" showEnclosingDefinitions="true"/>
+</viewState>
+</view>
 <view id="org.coocox.codebugger.trace.ui.traceview" partName="Semihosting">
 <viewState/>
+</view>
+<view id="org.eclipse.cdt.ui.callHierarchy" partName="Call Hierarchy">
+<viewState showFilesInLabels="false" variableFilter="false"/>
 </view>
 <view id="org.eclipse.debug.ui.DebugView" partName="Debug">
 <viewState/>
@@ -51,6 +59,9 @@
 <viewState/>
 </view>
 <view id="org.eclipse.debug.ui.VariableView" partName="Variables">
+<viewState/>
+</view>
+<view id="org.coocox.component.ui.Help" partName="Help">
 <viewState/>
 </view>
 <view id="org.eclipse.ui.views.ContentOutline" partName="Outline">
@@ -70,6 +81,8 @@
 <alwaysOnActionSet id="org.eclipse.debug.ui.breakpointActionSet"/>
 <alwaysOnActionSet id="org.coocox.userspace.actionSet"/>
 <alwaysOnActionSet id="org.coocox.component.ui.actionSet"/>
+<show_in_time id="org.eclipse.ui.navigator.ProjectExplorer" time="1456927281421"/>
+<show_in_time id="org.eclipse.ui.views.ContentOutline" time="1456927246397"/>
 <hide_menu_item_id id="org.coocox.codebugger.configuration.showMemoryAction"/>
 <hide_menu_item_id id="org.eclipse.jdt.ui.refactoring.menu"/>
 <hide_menu_item_id id="org.coocox.codebugger.configuration.ShowDisassemblyAction"/>
@@ -88,12 +101,24 @@
 <hide_toolbar_item_id id="org.eclipse.ui.edit.text.toggleShowSelectedElementOnly"/>
 <hide_toolbar_item_id id="org.eclipse.debug.ui.commands.TerminateAndRelaunch"/>
 <view id="org.coocox.builder.ui.views.ProjectView"/>
-<view id="org.eclipse.ui.views.ContentOutline"/>
 <fastViewBars>
+<fastViewBar fastViewLocation="131072" id="org.eclipse.ui.internal.ViewStack@39a01d" orientation="512" selectedTabId="org.eclipse.ui.views.ContentOutline" style="0">
+<fastViews>
+<view id="org.eclipse.ui.views.ContentOutline" ratio="0.29992107"/>
+</fastViews>
+</fastViewBar>
 <fastViewBar fastViewLocation="1024" id="org.eclipse.ui.internal.ViewStack@10f298c" orientation="256" selectedTabId="org.eclipse.ui.console.ConsoleView" style="0">
 <fastViews>
-<view id="org.eclipse.ui.console.ConsoleView" ratio="0.3"/>
+<view id="org.eclipse.ui.console.ConsoleView" ratio="0.29910713"/>
 <view id="org.eclipse.ui.views.ProgressView" ratio="0.3"/>
+<view id="org.coocox.component.ui.Help" ratio="0.3"/>
+</fastViews>
+</fastViewBar>
+<fastViewBar fastViewLocation="131072" id="org.eclipse.ui.internal.ViewStack@608adf" orientation="512" selectedTabId="org.eclipse.search.ui.views.SearchView" style="0">
+<fastViews>
+<view id="org.eclipse.ui.navigator.ProjectExplorer" ratio="0.3"/>
+<view id="org.eclipse.search.ui.views.SearchView" ratio="0.3"/>
+<view id="org.eclipse.cdt.ui.callHierarchy" ratio="0.3"/>
 </fastViews>
 </fastViewBar>
 </fastViewBars>
@@ -119,18 +144,25 @@
 <page content="org.eclipse.ui.console.ConsoleView" label="LabelNotFound"/>
 <page content="org.eclipse.ui.views.ProgressView" label="LabelNotFound"/>
 <page content="org.eclipse.ui.views.ProblemView" label="LabelNotFound"/>
+<page content="org.coocox.component.ui.Help" label="LabelNotFound"/>
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
 </folder>
 </info>
-<info part="org.eclipse.ui.editorss" ratio="0.16896345" ratioLeft="282" ratioRight="1387" relationship="2" relative="org.eclipse.ui.internal.ViewStack@70b01a"/>
+<info part="org.eclipse.ui.editorss" ratio="0.24287975" ratioLeft="307" ratioRight="957" relationship="2" relative="org.eclipse.ui.internal.ViewStack@70b01a"/>
 <info folder="true" part="org.eclipse.ui.internal.ViewStack@39a01d" ratio="0.7195972" ratioLeft="929" ratioRight="362" relationship="2" relative="org.eclipse.ui.editorss">
-<folder activePageID="org.eclipse.ui.views.ContentOutline" appearance="2" expanded="2">
-<page content="org.eclipse.ui.views.ContentOutline" label="Outline"/>
+<folder appearance="2" expanded="0">
+<page content="org.eclipse.ui.views.ContentOutline" label="LabelNotFound"/>
 <page content="org.eclipse.debug.ui.BreakpointView" label="LabelNotFound"/>
 <page content="org.coocox.coassistant.view.CoAssistantView" label="LabelNotFound"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
-<part id="0"/>
-</presentation>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
+</folder>
+</info>
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@608adf" ratio="0.5" ratioLeft="480" ratioRight="480" relationship="2" relative="org.eclipse.ui.editorss">
+<folder appearance="2" expanded="0">
+<page content="org.eclipse.ui.navigator.ProjectExplorer" label="LabelNotFound"/>
+<page content="org.eclipse.search.ui.views.SearchView" label="LabelNotFound"/>
+<page content="org.eclipse.cdt.ui.callHierarchy" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
 </folder>
 </info>
 </mainWindow>
@@ -231,170 +263,170 @@
 <navigationHistory>
 <editors>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/F4Disco - USBTest/main.c"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.asm.AsmEditor" path="/F4Disco - USBTest/components/STM32F407xx_cmsisboot/startup_stm32f407xx.S"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/F4Disco - USBTest/components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal_gpio.h"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.asm.AsmEditor" path="/F4Disco - USBTest/components/STM32F407xx_cmsisboot/startup_stm32f407xx.S"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/F4Disco - USBTest/components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal_gpio.c"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.asm.AsmEditor" path="/F4Disco - USBTest/components/STM32F407xx_cmsisboot/startup_stm32f407xx.S"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/F4Disco - USBTest/components/STM32F407xx_cmsisboot/system_stm32f4xx.c"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/F4Disco - USBTest/components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal_conf.h"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/F4Disco - USBTest/components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal.c"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.asm.AsmEditor" path="/F4Disco - USBTest/components/STM32F407xx_cmsisboot/startup_stm32f407xx.S"/>
-<editor factoryID="org.coocox.builder.ui.persistent.PersistentElementFactory" id="org.coocox.builder.ui.editors.ConfigEditor">
-<org.coocox.builder.ui.editors.ConfigEditor horizontalPosition="0" subTagIndex="0" verticalPosition="0"/>
-</editor>
-<editor factoryID="org.coocox.builder.ui.persistent.PersistentElementFactory" id="org.coocox.builder.ui.editors.ConfigEditor">
-<org.coocox.builder.ui.editors.ConfigEditor horizontalPosition="0" subTagIndex="0" verticalPosition="0"/>
-</editor>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/F4Disco - USBTest/usbd_cdc_interface.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/F4Disco - USBTest/usbd_cdc_interface.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/F4Disco - USBTest/usbd_conf.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/F4Disco - USBTest/usbd_conf.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/F4Disco - USBTest/usbdevice/usbd_core.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/F4Disco - USBTest/usbdevice/usbd_cdc.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/F4Disco - USBTest/components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal_pcd.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/F4Disco - USBTest/usbd_cdc_interface.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/F4Disco - USBTest/stm32f4xx_it.h"/>
+<editor factoryID="org.eclipse.cdt.ui.ExternalEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="Z:\GITHUB\Coocox\F4Disco - USBTest\app\main.h" project="F4Disco - USBTest"/>
 <editor factoryID="org.coocox.builder.ui.persistent.PersistentElementFactory" id="org.coocox.builder.ui.editors.ConfigEditor">
 <org.coocox.builder.ui.editors.ConfigEditor/>
 </editor>
-<editor factoryID="org.coocox.builder.ui.persistent.PersistentElementFactory" id="org.coocox.builder.ui.editors.ConfigEditor">
-<org.coocox.builder.ui.editors.ConfigEditor/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/F4Disco - USBTest/usbd_conf.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/F4Disco - USBTest/usbdevice/usbd_cdc.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/F4Disco - USBTest/usbdevice/usbd_cdc.h"/>
+<editor factoryID="org.coocox.component.ui.editors.repository.RepositoryElementFactory" id="org.coocox.builder.ui.editors.repository.RepositoryBrowser">
+<subPage/>
 </editor>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/F4Disco - USBTest/main.c"/>
-<editor factoryID="org.coocox.builder.ui.persistent.PersistentElementFactory" id="org.coocox.builder.ui.editors.ConfigEditor">
-<org.coocox.builder.ui.editors.ConfigEditor/>
-</editor>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/F4Disco - USBTest/components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal_rcc.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/F4Disco - USBTest/usbd_cdc_interface.c"/>
 </editors>
-<item historyLabel="main.c" index="0">
-<position info="not_deleted" x="683" y="0"/>
+<item historyLabel="usbd_core.c" index="5">
+<position info="not_deleted" x="2625" y="0"/>
+</item>
+<item historyLabel="usbd_conf.c" index="4">
+<position info="not_deleted" x="9805" y="10"/>
+</item>
+<item historyLabel="usbd_conf.h" index="3">
+<position info="not_deleted" x="1462" y="0"/>
+</item>
+<item historyLabel="usbd_cdc_interface.h" index="2">
+<position info="not_deleted" x="2440" y="0"/>
+</item>
+<item historyLabel="usbd_cdc_interface.c" index="1">
+<position info="not_deleted" x="2826" y="15"/>
 </item>
 <item historyLabel="main.c" index="0">
-<position info="not_deleted" x="1198" y="0"/>
+<position info="not_deleted" x="1362" y="0"/>
 </item>
-<item historyLabel="stm32f4xx_hal_gpio.h" index="2">
-<position info="not_deleted" x="9060" y="11"/>
-</item>
-<item historyLabel="main.c" index="0">
-<position info="not_deleted" x="950" y="0"/>
-</item>
-<item historyLabel="startup_stm32f407xx.S" index="1">
-<position info="not_deleted" x="3664" y="0"/>
+<item historyLabel="usbd_core.c" index="5">
+<position info="not_deleted" x="2069" y="18"/>
 </item>
 <item historyLabel="main.c" index="0">
-<position info="not_deleted" x="2835" y="0"/>
+<position info="not_deleted" x="1443" y="0"/>
 </item>
-<item historyLabel="startup_stm32f407xx.S" index="3">
+<item historyLabel="usbd_core.c" index="5">
+<position info="not_deleted" x="3609" y="0"/>
+</item>
+<item historyLabel="main.c" index="0">
+<position info="not_deleted" x="1535" y="0"/>
+</item>
+<item historyLabel="usbd_cdc.c" index="6">
+<position info="not_deleted" x="26290" y="26"/>
+</item>
+<item historyLabel="main.c" index="0">
+<position info="not_deleted" x="1624" y="0"/>
+</item>
+<item historyLabel="usbd_core.c" index="5">
+<position info="not_deleted" x="3999" y="0"/>
+</item>
+<item historyLabel="usbd_conf.c" index="4">
+<position info="not_deleted" x="11897" y="0"/>
+</item>
+<item historyLabel="stm32f4xx_hal_pcd.c" index="7">
+<position info="not_deleted" x="8413" y="13"/>
+</item>
+<item historyLabel="main.c" index="0">
+<position info="not_deleted" x="1624" y="0"/>
+</item>
+<item historyLabel="usbd_cdc_interface.c" index="1">
+<position info="not_deleted" x="2826" y="15"/>
+</item>
+<item historyLabel="usbd_conf.c" index="4">
+<position info="not_deleted" x="11897" y="0"/>
+</item>
+<item historyLabel="usbd_conf.c" index="4">
+<position info="not_deleted" x="2147" y="15"/>
+</item>
+<item historyLabel="stm32f4xx_hal_pcd.c" index="7">
+<position info="not_deleted" x="5625" y="15"/>
+</item>
+<item historyLabel="stm32f4xx_hal_pcd.c" index="7">
+<position info="not_deleted" x="5872" y="0"/>
+</item>
+<item historyLabel="usbd_conf.c" index="4">
+<position info="not_deleted" x="2147" y="15"/>
+</item>
+<item historyLabel="main.c" index="0">
+<position info="not_deleted" x="1624" y="0"/>
+</item>
+<item historyLabel="usbd_cdc_interface.h" index="8">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="main.c" index="0">
-<position info="not_deleted" x="1257" y="0"/>
-</item>
-<item historyLabel="stm32f4xx_hal_gpio.c" index="4">
-<position info="not_deleted" x="8904" y="0"/>
-</item>
-<item historyLabel="main.c" index="0">
-<position info="not_deleted" x="1243" y="0"/>
-</item>
-<item historyLabel="startup_stm32f407xx.S" index="5">
+<item historyLabel="stm32f4xx_it.h" index="9">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="main.c" index="0">
-<position info="not_deleted" x="897" y="0"/>
+<item historyLabel="stm32f4xx_it.h" index="9">
+<position info="not_deleted" x="2239" y="0"/>
 </item>
-<item historyLabel="main.c" index="0">
-<position info="not_deleted" x="4341" y="0"/>
+<item historyLabel="usbd_cdc_interface.h" index="8">
+<position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="main.c" index="0">
-<position info="not_deleted" x="893" y="0"/>
+<item historyLabel="stm32f4xx_it.h" index="9">
+<position info="not_deleted" x="2231" y="0"/>
 </item>
-<item historyLabel="system_stm32f4xx.c" index="6">
-<position info="not_deleted" x="3196" y="0"/>
+<item historyLabel="main.h" index="10">
+<position info="not_deleted" x="99" y="0"/>
 </item>
-<item historyLabel="stm32f4xx_hal_conf.h" index="7">
-<position info="not_deleted" x="3669" y="0"/>
+<item historyLabel="stm32f4xx_it.h" index="9">
+<position info="not_deleted" x="2938" y="0"/>
 </item>
-<item historyLabel="main.c" index="0">
-<position info="not_deleted" x="893" y="0"/>
+<item historyLabel="usbd_cdc_interface.h" index="8">
+<position info="not_deleted" x="2930" y="23"/>
 </item>
-<item historyLabel="main.c" index="0">
-<position info="not_deleted" x="683" y="0"/>
-</item>
-<item historyLabel="stm32f4xx_hal.c" index="8">
-<position info="not_deleted" x="12871" y="0"/>
-</item>
-<item historyLabel="stm32f4xx_hal.c" index="8">
-<position info="not_deleted" x="13492" y="0"/>
-</item>
-<item historyLabel="main.c" index="0">
-<position info="not_deleted" x="895" y="0"/>
-</item>
-<item historyLabel="startup_stm32f407xx.S" index="9">
-<position info="not_deleted" x="3664" y="0"/>
-</item>
-<item historyLabel="main.c" index="0">
-<position info="not_deleted" x="683" y="0"/>
-</item>
-<item historyLabel="main.c" index="0">
-<position info="not_deleted" x="1329" y="0"/>
-</item>
-<item historyLabel="main.c" index="0">
-<position info="not_deleted" x="1429" y="0"/>
-</item>
-<item historyLabel="main.c" index="0">
-<position info="not_deleted" x="1329" y="0"/>
-</item>
-<item historyLabel="main.c" index="0">
-<position info="not_deleted" x="1429" y="0"/>
-</item>
-<item historyLabel="main.c" index="0">
-<position info="not_deleted" x="1329" y="0"/>
-</item>
-<item historyLabel="main.c" index="0">
-<position info="not_deleted" x="1429" y="0"/>
-</item>
-<item historyLabel="main.c" index="0">
-<position info="not_deleted" x="1329" y="0"/>
-</item>
-<item historyLabel="main.c" index="0">
-<position info="not_deleted" x="1429" y="0"/>
-</item>
-<item historyLabel="main.c" index="0">
-<position info="not_deleted" x="1329" y="0"/>
-</item>
-<item historyLabel="main.c" index="0">
-<position info="not_deleted" x="1836" y="0"/>
-</item>
-<item historyLabel="main.c" index="0">
-<position info="not_deleted" x="1329" y="0"/>
-</item>
-<item historyLabel="Configuration" index="10"/>
 <item historyLabel="Configuration" index="11"/>
-<item historyLabel="Configuration" index="12"/>
-<item historyLabel="Configuration" index="13"/>
-<item historyLabel="main.c" index="14">
-<position info="not_deleted" x="953" y="0"/>
+<item historyLabel="usbd_conf.c" index="12">
+<position info="not_deleted" x="4772" y="0"/>
 </item>
-<item historyLabel="Configuration" index="15"/>
-<item historyLabel="main.c" index="14">
-<position info="not_deleted" x="953" y="0"/>
-</item>
-<item historyLabel="Configuration" index="13"/>
-<item historyLabel="main.c" index="14">
-<position info="not_deleted" x="886" y="0"/>
-</item>
-<item historyLabel="stm32f4xx_hal_rcc.h" index="16">
+<item historyLabel="usbd_cdc.c" index="13">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="main.c" index="14">
-<position info="not_deleted" x="886" y="0"/>
-</item>
-<item historyLabel="stm32f4xx_hal_rcc.h" index="16">
+<item historyLabel="usbd_cdc.h" index="14">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="main.c" index="14">
-<position info="not_deleted" x="886" y="0"/>
+<item historyLabel="usbd_conf.c" index="12">
+<position info="not_deleted" x="4772" y="0"/>
 </item>
-<item historyLabel="main.c" index="14">
-<position info="not_deleted" x="860" y="0"/>
+<item historyLabel="Repository" index="15"/>
+<item historyLabel="usbd_conf.c" index="12">
+<position info="not_deleted" x="5039" y="0"/>
 </item>
-<item historyLabel="stm32f4xx_hal_rcc.h" index="16">
-<position info="not_deleted" x="24516" y="18"/>
+<item historyLabel="main.c" index="0">
+<position info="not_deleted" x="717" y="0"/>
 </item>
-<item active="true" historyLabel="main.c" index="14">
-<position info="not_deleted" x="860" y="0"/>
+<item historyLabel="usbd_cdc_interface.h" index="8">
+<position info="not_deleted" x="2930" y="23"/>
+</item>
+<item historyLabel="main.c" index="0">
+<position info="not_deleted" x="1040" y="0"/>
+</item>
+<item historyLabel="usbd_cdc_interface.h" index="8">
+<position info="not_deleted" x="1302" y="0"/>
+</item>
+<item historyLabel="Configuration" index="11"/>
+<item historyLabel="main.c" index="0">
+<position info="not_deleted" x="2351" y="0"/>
+</item>
+<item historyLabel="usbd_cdc_interface.c" index="16">
+<position info="not_deleted" x="7357" y="46"/>
+</item>
+<item historyLabel="main.c" index="0">
+<position info="not_deleted" x="2351" y="0"/>
+</item>
+<item historyLabel="main.h" index="10">
+<position info="not_deleted" x="157" y="0"/>
+</item>
+<item historyLabel="main.c" index="0">
+<position info="not_deleted" x="2351" y="0"/>
+</item>
+<item historyLabel="main.c" index="0">
+<position info="not_deleted" x="1701" y="0"/>
+</item>
+<item active="true" historyLabel="main.c" index="0">
+<position info="not_deleted" x="2349" y="0"/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
@@ -403,53 +435,54 @@
 <actionBarAdvisor/>
 </window>
 <mruList>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="stm32f4xx_hal_rcc.h" tooltip="F4Disco - USBTest/components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal_rcc.h">
-<persistable path="/F4Disco - USBTest/components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal_rcc.h"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="usbd_cdc_interface.c" tooltip="F4Disco - USBTest/usbd_cdc_interface.c">
+<persistable path="/F4Disco - USBTest/usbd_cdc_interface.c"/>
+</file>
+<file factoryID="org.coocox.component.ui.editors.repository.RepositoryElementFactory" id="org.coocox.builder.ui.editors.repository.RepositoryBrowser" name="Repository" tooltip="Repository">
+<persistable>
+<subPage/>
+</persistable>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="usbd_cdc.h" tooltip="F4Disco - USBTest/usbdevice/usbd_cdc.h">
+<persistable path="/F4Disco - USBTest/usbdevice/usbd_cdc.h"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="usbd_cdc.c" tooltip="F4Disco - USBTest/usbdevice/usbd_cdc.c">
+<persistable path="/F4Disco - USBTest/usbdevice/usbd_cdc.c"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="usbd_conf.c" tooltip="F4Disco - USBTest/usbd_conf.c">
+<persistable path="/F4Disco - USBTest/usbd_conf.c"/>
 </file>
 <file factoryID="org.coocox.builder.ui.persistent.PersistentElementFactory" id="org.coocox.builder.ui.editors.ConfigEditor" name="" tooltip="">
 <persistable>
 <org.coocox.builder.ui.editors.ConfigEditor/>
 </persistable>
 </file>
-<file factoryID="org.coocox.builder.ui.persistent.PersistentElementFactory" id="org.coocox.builder.ui.editors.ConfigEditor" name="" tooltip="">
-<persistable>
-<org.coocox.builder.ui.editors.ConfigEditor/>
-</persistable>
-</file>
-<file factoryID="org.coocox.builder.ui.persistent.PersistentElementFactory" id="org.coocox.builder.ui.editors.ConfigEditor" name="" tooltip="">
-<persistable>
-<org.coocox.builder.ui.editors.ConfigEditor/>
-</persistable>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.asm.AsmEditor" name="startup_stm32f407xx.S" tooltip="F4Disco - USBTest/components/STM32F407xx_cmsisboot/startup_stm32f407xx.S">
-<persistable path="/F4Disco - USBTest/components/STM32F407xx_cmsisboot/startup_stm32f407xx.S"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="stm32f4xx_hal.c" tooltip="F4Disco - USBTest/components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal.c">
-<persistable path="/F4Disco - USBTest/components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal.c"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="stm32f4xx_hal_conf.h" tooltip="F4Disco - USBTest/components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal_conf.h">
-<persistable path="/F4Disco - USBTest/components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal_conf.h"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="system_stm32f4xx.c" tooltip="F4Disco - USBTest/components/STM32F407xx_cmsisboot/system_stm32f4xx.c">
-<persistable path="/F4Disco - USBTest/components/STM32F407xx_cmsisboot/system_stm32f4xx.c"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="stm32f4xx_hal_gpio.c" tooltip="F4Disco - USBTest/components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal_gpio.c">
-<persistable path="/F4Disco - USBTest/components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal_gpio.c"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="stm32f4xx_hal_gpio.h" tooltip="F4Disco - USBTest/components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal_gpio.h">
-<persistable path="/F4Disco - USBTest/components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal_gpio.h"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="stm32f4xx_it.c" tooltip="F4Disco - USBTest/stm32f4xx_it.c">
-<persistable path="/F4Disco - USBTest/stm32f4xx_it.c"/>
+<file factoryID="org.eclipse.cdt.ui.ExternalEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="main.h" tooltip="Z:\GITHUB\Coocox\F4Disco - USBTest\app\main.h">
+<persistable path="Z:\GITHUB\Coocox\F4Disco - USBTest\app\main.h" project="F4Disco - USBTest"/>
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="stm32f4xx_it.h" tooltip="F4Disco - USBTest/stm32f4xx_it.h">
 <persistable path="/F4Disco - USBTest/stm32f4xx_it.h"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="stm32f4xx_hal_rcc.c" tooltip="F4Disco - USBTest/components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal_rcc.c">
-<persistable path="/F4Disco - USBTest/components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal_rcc.c"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="usbd_cdc_interface.h" tooltip="F4Disco - USBTest/usbd_cdc_interface.h">
+<persistable path="/F4Disco - USBTest/usbd_cdc_interface.h"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="stm32f4xx_hal.h" tooltip="F4Disco - USBTest/components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal.h">
-<persistable path="/F4Disco - USBTest/components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal.h"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="stm32f4xx_hal_pcd.c" tooltip="F4Disco - USBTest/components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal_pcd.c">
+<persistable path="/F4Disco - USBTest/components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal_pcd.c"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="usbd_core.c" tooltip="F4Disco - USBTest/usbdevice/usbd_core.c">
+<persistable path="/F4Disco - USBTest/usbdevice/usbd_core.c"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="usbd_conf.h" tooltip="F4Disco - USBTest/usbd_conf.h">
+<persistable path="/F4Disco - USBTest/usbd_conf.h"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="stm32f4xx_hal_msp.c" tooltip="F4Disco - USBTest/stm32f4xx_hal_msp.c">
+<persistable path="/F4Disco - USBTest/stm32f4xx_hal_msp.c"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="stm32f4xx_it.c" tooltip="F4Disco - USBTest/stm32f4xx_it.c">
+<persistable path="/F4Disco - USBTest/stm32f4xx_it.c"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="stm32f4xx_hal_uart.h" tooltip="F4Disco - USBTest/components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal_uart.h">
+<persistable path="/F4Disco - USBTest/components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal_uart.h"/>
 </file>
 </mruList>
 </workbench>

@@ -16,6 +16,7 @@
         <DefinedSymbols>
           <Define name="STM32F407VG"/>
           <Define name="STM32F4XX"/>
+          <Define name="USE_USB_FS"/>
         </DefinedSymbols>
       </Compile>
       <Link useDefault="0">
@@ -37,7 +38,7 @@
       </Link>
       <Output>
         <Option name="OutputFileType" value="0"/>
-        <Option name="Path" value="./"/>
+        <Option name="Path" value="z:/github/coocox/f4disco - usbtest/f4disco - usbtest/"/>
         <Option name="Name" value="F4Disco - USBTest"/>
         <Option name="HEX" value="1"/>
         <Option name="BIN" value="1"/>
@@ -65,158 +66,174 @@
       <Option name="org.coocox.codebugger.gdbjtag.core.verify" value="1"/>
       <Option name="org.coocox.codebugger.gdbjtag.core.downloadFuction" value="Erase Full Chip"/>
       <Option name="org.coocox.codebugger.gdbjtag.core.defaultAlgorithm" value="STM32F4xx_1024.elf"/>
-      <Option name="org.coocox.codebugger.gdbjtag.coredebugInRamInitCommands" value="cd Z:/GITHUB/Coocox/F4Disco - USBTest/F4Disco - USBTest/Debug/bin
-restore F4Disco - USBTest.elf
-set {unsigned int*}0xE000ED08 = 0x20000000
-set $sp = {unsigned int*}0x20000000
-set $pc = {unsigned int*}0x20000004
-"/>
+      <Option name="org.coocox.codebugger.gdbjtag.coredebugInRamInitCommands" value="cd Z:/GITHUB/Coocox/F4Disco - USBTest/F4Disco - USBTest/Debug/bin restore F4Disco - USBTest.elf set {unsigned int*}0xE000ED08 = 0x20000000 set $sp = {unsigned int*}0x20000000 set $pc = {unsigned int*}0x20000004 "/>
     </DebugOption>
     <ExcludeFile/>
   </Target>
-  <Components path="./"/>
+  <Components path="./">
+    <Component id="30" name="C Library" path="" type="2"/>
+  </Components>
   <Files>
-    <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_ll_usb.c" path="components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_ll_usb.c" type="1"/>
-    <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal.c" path="components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_hal.c" type="1"/>
-    <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal_sram.c" path="components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_hal_sram.c" type="1"/>
-    <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal_flash_ex.c" path="components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_hal_flash_ex.c" type="1"/>
-    <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal_gpio.h" path="components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_hal_gpio.h" type="1"/>
-    <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal_can.h" path="components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_hal_can.h" type="1"/>
-    <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal_i2c.c" path="components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_hal_i2c.c" type="1"/>
-    <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal_ltdc.c" path="components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_hal_ltdc.c" type="1"/>
-    <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal_iwdg.h" path="components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_hal_iwdg.h" type="1"/>
-    <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal_conf.h" path="components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_hal_conf.h" type="1"/>
-    <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal_dma.h" path="components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_hal_dma.h" type="1"/>
-    <File name="components/STM32F407xx_cmsisboot/stm32f407xx.h" path="components/coocox-master/STM32F407xx_cmsisboot/source/stm32f407xx.h" type="1"/>
-    <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal_hcd.h" path="components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_hal_hcd.h" type="1"/>
-    <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal_cryp_ex.c" path="components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_hal_cryp_ex.c" type="1"/>
-    <File name="components/cmsis_core/arm_const_structs.h" path="components/coocox-master/cmsis_core/source/arm_const_structs.h" type="1"/>
-    <File name="components/STM32F407xx_cmsisboot/stm32f4xx.h" path="components/coocox-master/STM32F407xx_cmsisboot/source/stm32f4xx.h" type="1"/>
-    <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal_msp_template.c" path="components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_hal_msp_template.c" type="1"/>
-    <File name="components/cmsis_core/core_sc300.h" path="components/coocox-master/cmsis_core/source/core_sc300.h" type="1"/>
-    <File name="main.h" path="app/main.h" type="1"/>
-    <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal_tim_ex.h" path="components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_hal_tim_ex.h" type="1"/>
-    <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal_gpio.c" path="components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_hal_gpio.c" type="1"/>
-    <File name="stm32f4xx_it.c" path="app/stm32f4xx_it.c" type="1"/>
-    <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal_dac.c" path="components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_hal_dac.c" type="1"/>
-    <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal_spi.h" path="components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_hal_spi.h" type="1"/>
-    <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal_i2c.h" path="components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_hal_i2c.h" type="1"/>
-    <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal_flash.c" path="components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_hal_flash.c" type="1"/>
-    <File name="components/STM32F407xx_cmsisboot/system_stm32f4xx.h" path="components/coocox-master/STM32F407xx_cmsisboot/source/system_stm32f4xx.h" type="1"/>
-    <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal_def.h" path="components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_hal_def.h" type="1"/>
-    <File name="components/cmsis_core/core_cm4_simd.h" path="components/coocox-master/cmsis_core/source/core_cm4_simd.h" type="1"/>
-    <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal_i2c_ex.h" path="components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_hal_i2c_ex.h" type="1"/>
-    <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal_gpio_ex.h" path="components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_hal_gpio_ex.h" type="1"/>
-    <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal_dma_ex.c" path="components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_hal_dma_ex.c" type="1"/>
-    <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal_ltdc.h" path="components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_hal_ltdc.h" type="1"/>
-    <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal_pcd_ex.c" path="components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_hal_pcd_ex.c" type="1"/>
-    <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal_adc.c" path="components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_hal_adc.c" type="1"/>
-    <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal_sd.h" path="components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_hal_sd.h" type="1"/>
-    <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal_hcd.c" path="components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_hal_hcd.c" type="1"/>
-    <File name="components/cmsis_core/core_cm0plus.h" path="components/coocox-master/cmsis_core/source/core_cm0plus.h" type="1"/>
-    <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal_tim.c" path="components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_hal_tim.c" type="1"/>
-    <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal_rtc.h" path="components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_hal_rtc.h" type="1"/>
-    <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal_flash_ramfunc.c" path="components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_hal_flash_ramfunc.c" type="1"/>
-    <File name="components/cmsis_core/core_sc000.h" path="components/coocox-master/cmsis_core/source/core_sc000.h" type="1"/>
-    <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal_cryp_ex.h" path="components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_hal_cryp_ex.h" type="1"/>
-    <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal_dma_ex.h" path="components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_hal_dma_ex.h" type="1"/>
-    <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal_smartcard.c" path="components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_hal_smartcard.c" type="1"/>
-    <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal_can.c" path="components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_hal_can.c" type="1"/>
-    <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal_wwdg.h" path="components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_hal_wwdg.h" type="1"/>
-    <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal_cortex.h" path="components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_hal_cortex.h" type="1"/>
-    <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal_rtc_ex.c" path="components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_hal_rtc_ex.c" type="1"/>
-    <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_ll_sdmmc.h" path="components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_ll_sdmmc.h" type="1"/>
-    <File name="components/cmsis_core/core_cm3.h" path="components/coocox-master/cmsis_core/source/core_cm3.h" type="1"/>
-    <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal_pwr.c" path="components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_hal_pwr.c" type="1"/>
-    <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal_rcc.h" path="components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_hal_rcc.h" type="1"/>
-    <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal_tim_ex.c" path="components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_hal_tim_ex.c" type="1"/>
-    <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal_pccard.c" path="components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_hal_pccard.c" type="1"/>
-    <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal_usart.c" path="components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_hal_usart.c" type="1"/>
-    <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal_smartcard.h" path="components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_hal_smartcard.h" type="1"/>
-    <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal_rcc.c" path="components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_hal_rcc.c" type="1"/>
-    <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal_adc.h" path="components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_hal_adc.h" type="1"/>
-    <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal_crc.h" path="components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_hal_crc.h" type="1"/>
-    <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal_sram.h" path="components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_hal_sram.h" type="1"/>
-    <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal.h" path="components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_hal.h" type="1"/>
-    <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal_rtc.c" path="components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_hal_rtc.c" type="1"/>
-    <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal_flash_ramfunc.h" path="components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_hal_flash_ramfunc.h" type="1"/>
-    <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_ll_fmc.h" path="components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_ll_fmc.h" type="1"/>
-    <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_ll_usb.h" path="components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_ll_usb.h" type="1"/>
-    <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal_i2c_ex.c" path="components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_hal_i2c_ex.c" type="1"/>
-    <File name="components/cmsis_core/core_cm4.h" path="components/coocox-master/cmsis_core/source/core_cm4.h" type="1"/>
-    <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal_flash.h" path="components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_hal_flash.h" type="1"/>
-    <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal_spi.c" path="components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_hal_spi.c" type="1"/>
-    <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal_pwr.h" path="components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_hal_pwr.h" type="1"/>
-    <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal_hash_ex.c" path="components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_hal_hash_ex.c" type="1"/>
-    <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal_adc_ex.c" path="components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_hal_adc_ex.c" type="1"/>
-    <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_ll_sdmmc.c" path="components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_ll_sdmmc.c" type="1"/>
-    <File name="main.c" path="app/main.c" type="1"/>
-    <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal_rcc_ex.c" path="components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_hal_rcc_ex.c" type="1"/>
-    <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal_hash.h" path="components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_hal_hash.h" type="1"/>
-    <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal_i2s.c" path="components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_hal_i2s.c" type="1"/>
-    <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_ll_fmc.c" path="components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_ll_fmc.c" type="1"/>
-    <File name="components/cmsis_core/core_cmInstr.h" path="components/coocox-master/cmsis_core/source/core_cmInstr.h" type="1"/>
-    <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal_i2s_ex.h" path="components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_hal_i2s_ex.h" type="1"/>
-    <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal_dac_ex.c" path="components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_hal_dac_ex.c" type="1"/>
-    <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal_adc_ex.h" path="components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_hal_adc_ex.h" type="1"/>
-    <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal_nor.h" path="components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_hal_nor.h" type="1"/>
-    <File name="components/cmsis_core/core_cmFunc.h" path="components/coocox-master/cmsis_core/source/core_cmFunc.h" type="1"/>
+    <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_ll_usb.c" path="../../../../../../vmware-host/Shared Folders/GITHUB/Coocox/F4Disco - USBTest/components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_ll_usb.c" type="1"/>
+    <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal_sram.c" path="../../../../../../vmware-host/Shared Folders/GITHUB/Coocox/F4Disco - USBTest/components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_hal_sram.c" type="1"/>
+    <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal.c" path="../../../../../../vmware-host/Shared Folders/GITHUB/Coocox/F4Disco - USBTest/components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_hal.c" type="1"/>
+    <File name="usbdevice/usbd_ctlreq.h" path="Z:/GITHUB/Coocox/F4Disco - USBTest/app/usbdevice/usbd_ctlreq.h" type="1"/>
+    <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal_gpio.h" path="../../../../../../vmware-host/Shared Folders/GITHUB/Coocox/F4Disco - USBTest/components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_hal_gpio.h" type="1"/>
+    <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal_flash_ex.c" path="../../../../../../vmware-host/Shared Folders/GITHUB/Coocox/F4Disco - USBTest/components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_hal_flash_ex.c" type="1"/>
+    <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal_can.h" path="../../../../../../vmware-host/Shared Folders/GITHUB/Coocox/F4Disco - USBTest/components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_hal_can.h" type="1"/>
+    <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal_i2c.c" path="../../../../../../vmware-host/Shared Folders/GITHUB/Coocox/F4Disco - USBTest/components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_hal_i2c.c" type="1"/>
+    <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal_iwdg.h" path="../../../../../../vmware-host/Shared Folders/GITHUB/Coocox/F4Disco - USBTest/components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_hal_iwdg.h" type="1"/>
+    <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal_ltdc.c" path="../../../../../../vmware-host/Shared Folders/GITHUB/Coocox/F4Disco - USBTest/components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_hal_ltdc.c" type="1"/>
+    <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal_conf.h" path="../../../../../../vmware-host/Shared Folders/GITHUB/Coocox/F4Disco - USBTest/components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_hal_conf.h" type="1"/>
+    <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal_dma.h" path="../../../../../../vmware-host/Shared Folders/GITHUB/Coocox/F4Disco - USBTest/components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_hal_dma.h" type="1"/>
+    <File name="components/STM32F407xx_cmsisboot/stm32f407xx.h" path="../../../../../../vmware-host/Shared Folders/GITHUB/Coocox/F4Disco - USBTest/components/coocox-master/STM32F407xx_cmsisboot/source/stm32f407xx.h" type="1"/>
+    <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal_hcd.h" path="../../../../../../vmware-host/Shared Folders/GITHUB/Coocox/F4Disco - USBTest/components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_hal_hcd.h" type="1"/>
+    <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal_cryp_ex.c" path="../../../../../../vmware-host/Shared Folders/GITHUB/Coocox/F4Disco - USBTest/components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_hal_cryp_ex.c" type="1"/>
+    <File name="components/cmsis_core/arm_const_structs.h" path="../../../../../../vmware-host/Shared Folders/GITHUB/Coocox/F4Disco - USBTest/components/coocox-master/cmsis_core/source/arm_const_structs.h" type="1"/>
+    <File name="usbdevice" path="" type="2"/>
+    <File name="components/STM32F407xx_cmsisboot/stm32f4xx.h" path="../../../../../../vmware-host/Shared Folders/GITHUB/Coocox/F4Disco - USBTest/components/coocox-master/STM32F407xx_cmsisboot/source/stm32f4xx.h" type="1"/>
+    <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal_msp_template.c" path="../../../../../../vmware-host/Shared Folders/GITHUB/Coocox/F4Disco - USBTest/components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_hal_msp_template.c" type="1"/>
+    <File name="components/cmsis_core/core_sc300.h" path="../../../../../../vmware-host/Shared Folders/GITHUB/Coocox/F4Disco - USBTest/components/coocox-master/cmsis_core/source/core_sc300.h" type="1"/>
+    <File name="usbdevice/usbd_ctlreq.c" path="Z:/GITHUB/Coocox/F4Disco - USBTest/app/usbdevice/usbd_ctlreq.c" type="1"/>
+    <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal_tim_ex.h" path="../../../../../../vmware-host/Shared Folders/GITHUB/Coocox/F4Disco - USBTest/components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_hal_tim_ex.h" type="1"/>
+    <File name="main.h" path="../../../../../../vmware-host/Shared Folders/GITHUB/Coocox/F4Disco - USBTest/app/main.h" type="1"/>
+    <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal_gpio.c" path="../../../../../../vmware-host/Shared Folders/GITHUB/Coocox/F4Disco - USBTest/components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_hal_gpio.c" type="1"/>
+    <File name="stm32f4xx_it.c" path="Z:/GITHUB/Coocox/F4Disco - USBTest/app/stm32f4xx_it.c" type="1"/>
+    <File name="syscalls/syscalls.c" path="Z:/GITHUB/Coocox/F4Disco - USBTest/syscalls/syscalls.c" type="1"/>
+    <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal_dac.c" path="../../../../../../vmware-host/Shared Folders/GITHUB/Coocox/F4Disco - USBTest/components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_hal_dac.c" type="1"/>
+    <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal_spi.h" path="../../../../../../vmware-host/Shared Folders/GITHUB/Coocox/F4Disco - USBTest/components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_hal_spi.h" type="1"/>
+    <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal_i2c.h" path="../../../../../../vmware-host/Shared Folders/GITHUB/Coocox/F4Disco - USBTest/components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_hal_i2c.h" type="1"/>
+    <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal_flash.c" path="../../../../../../vmware-host/Shared Folders/GITHUB/Coocox/F4Disco - USBTest/components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_hal_flash.c" type="1"/>
+    <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal_def.h" path="../../../../../../vmware-host/Shared Folders/GITHUB/Coocox/F4Disco - USBTest/components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_hal_def.h" type="1"/>
+    <File name="components/STM32F407xx_cmsisboot/system_stm32f4xx.h" path="../../../../../../vmware-host/Shared Folders/GITHUB/Coocox/F4Disco - USBTest/components/coocox-master/STM32F407xx_cmsisboot/source/system_stm32f4xx.h" type="1"/>
+    <File name="components/cmsis_core/core_cm4_simd.h" path="../../../../../../vmware-host/Shared Folders/GITHUB/Coocox/F4Disco - USBTest/components/coocox-master/cmsis_core/source/core_cm4_simd.h" type="1"/>
+    <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal_i2c_ex.h" path="../../../../../../vmware-host/Shared Folders/GITHUB/Coocox/F4Disco - USBTest/components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_hal_i2c_ex.h" type="1"/>
+    <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal_gpio_ex.h" path="../../../../../../vmware-host/Shared Folders/GITHUB/Coocox/F4Disco - USBTest/components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_hal_gpio_ex.h" type="1"/>
+    <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal_dma_ex.c" path="../../../../../../vmware-host/Shared Folders/GITHUB/Coocox/F4Disco - USBTest/components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_hal_dma_ex.c" type="1"/>
+    <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal_ltdc.h" path="../../../../../../vmware-host/Shared Folders/GITHUB/Coocox/F4Disco - USBTest/components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_hal_ltdc.h" type="1"/>
+    <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal_pcd_ex.c" path="../../../../../../vmware-host/Shared Folders/GITHUB/Coocox/F4Disco - USBTest/components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_hal_pcd_ex.c" type="1"/>
+    <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal_adc.c" path="../../../../../../vmware-host/Shared Folders/GITHUB/Coocox/F4Disco - USBTest/components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_hal_adc.c" type="1"/>
+    <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal_sd.h" path="../../../../../../vmware-host/Shared Folders/GITHUB/Coocox/F4Disco - USBTest/components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_hal_sd.h" type="1"/>
+    <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal_hcd.c" path="../../../../../../vmware-host/Shared Folders/GITHUB/Coocox/F4Disco - USBTest/components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_hal_hcd.c" type="1"/>
+    <File name="components/cmsis_core/core_cm0plus.h" path="../../../../../../vmware-host/Shared Folders/GITHUB/Coocox/F4Disco - USBTest/components/coocox-master/cmsis_core/source/core_cm0plus.h" type="1"/>
+    <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal_tim.c" path="../../../../../../vmware-host/Shared Folders/GITHUB/Coocox/F4Disco - USBTest/components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_hal_tim.c" type="1"/>
+    <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal_rtc.h" path="../../../../../../vmware-host/Shared Folders/GITHUB/Coocox/F4Disco - USBTest/components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_hal_rtc.h" type="1"/>
+    <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal_flash_ramfunc.c" path="../../../../../../vmware-host/Shared Folders/GITHUB/Coocox/F4Disco - USBTest/components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_hal_flash_ramfunc.c" type="1"/>
+    <File name="components/cmsis_core/core_sc000.h" path="../../../../../../vmware-host/Shared Folders/GITHUB/Coocox/F4Disco - USBTest/components/coocox-master/cmsis_core/source/core_sc000.h" type="1"/>
+    <File name="usbd_conf.h" path="Z:/GITHUB/Coocox/F4Disco - USBTest/app/usbd_conf.h" type="1"/>
+    <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal_cryp_ex.h" path="../../../../../../vmware-host/Shared Folders/GITHUB/Coocox/F4Disco - USBTest/components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_hal_cryp_ex.h" type="1"/>
+    <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal_dma_ex.h" path="../../../../../../vmware-host/Shared Folders/GITHUB/Coocox/F4Disco - USBTest/components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_hal_dma_ex.h" type="1"/>
+    <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal_smartcard.c" path="../../../../../../vmware-host/Shared Folders/GITHUB/Coocox/F4Disco - USBTest/components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_hal_smartcard.c" type="1"/>
+    <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal_can.c" path="../../../../../../vmware-host/Shared Folders/GITHUB/Coocox/F4Disco - USBTest/components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_hal_can.c" type="1"/>
+    <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal_wwdg.h" path="../../../../../../vmware-host/Shared Folders/GITHUB/Coocox/F4Disco - USBTest/components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_hal_wwdg.h" type="1"/>
+    <File name="usbd_desc.c" path="Z:/GITHUB/Coocox/F4Disco - USBTest/app/usbd_desc.c" type="1"/>
+    <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal_cortex.h" path="../../../../../../vmware-host/Shared Folders/GITHUB/Coocox/F4Disco - USBTest/components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_hal_cortex.h" type="1"/>
+    <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal_rtc_ex.c" path="../../../../../../vmware-host/Shared Folders/GITHUB/Coocox/F4Disco - USBTest/components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_hal_rtc_ex.c" type="1"/>
+    <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_ll_sdmmc.h" path="../../../../../../vmware-host/Shared Folders/GITHUB/Coocox/F4Disco - USBTest/components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_ll_sdmmc.h" type="1"/>
+    <File name="components/cmsis_core/core_cm3.h" path="../../../../../../vmware-host/Shared Folders/GITHUB/Coocox/F4Disco - USBTest/components/coocox-master/cmsis_core/source/core_cm3.h" type="1"/>
+    <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal_pwr.c" path="../../../../../../vmware-host/Shared Folders/GITHUB/Coocox/F4Disco - USBTest/components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_hal_pwr.c" type="1"/>
+    <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal_rcc.h" path="../../../../../../vmware-host/Shared Folders/GITHUB/Coocox/F4Disco - USBTest/components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_hal_rcc.h" type="1"/>
+    <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal_tim_ex.c" path="../../../../../../vmware-host/Shared Folders/GITHUB/Coocox/F4Disco - USBTest/components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_hal_tim_ex.c" type="1"/>
+    <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal_pccard.c" path="../../../../../../vmware-host/Shared Folders/GITHUB/Coocox/F4Disco - USBTest/components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_hal_pccard.c" type="1"/>
+    <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal_usart.c" path="../../../../../../vmware-host/Shared Folders/GITHUB/Coocox/F4Disco - USBTest/components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_hal_usart.c" type="1"/>
+    <File name="usbd_desc.h" path="Z:/GITHUB/Coocox/F4Disco - USBTest/app/usbd_desc.h" type="1"/>
+    <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal_rcc.c" path="../../../../../../vmware-host/Shared Folders/GITHUB/Coocox/F4Disco - USBTest/components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_hal_rcc.c" type="1"/>
+    <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal_smartcard.h" path="../../../../../../vmware-host/Shared Folders/GITHUB/Coocox/F4Disco - USBTest/components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_hal_smartcard.h" type="1"/>
+    <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal_crc.h" path="../../../../../../vmware-host/Shared Folders/GITHUB/Coocox/F4Disco - USBTest/components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_hal_crc.h" type="1"/>
+    <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal_adc.h" path="../../../../../../vmware-host/Shared Folders/GITHUB/Coocox/F4Disco - USBTest/components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_hal_adc.h" type="1"/>
+    <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal.h" path="../../../../../../vmware-host/Shared Folders/GITHUB/Coocox/F4Disco - USBTest/components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_hal.h" type="1"/>
+    <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal_sram.h" path="../../../../../../vmware-host/Shared Folders/GITHUB/Coocox/F4Disco - USBTest/components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_hal_sram.h" type="1"/>
+    <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal_flash_ramfunc.h" path="../../../../../../vmware-host/Shared Folders/GITHUB/Coocox/F4Disco - USBTest/components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_hal_flash_ramfunc.h" type="1"/>
+    <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal_rtc.c" path="../../../../../../vmware-host/Shared Folders/GITHUB/Coocox/F4Disco - USBTest/components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_hal_rtc.c" type="1"/>
+    <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_ll_fmc.h" path="../../../../../../vmware-host/Shared Folders/GITHUB/Coocox/F4Disco - USBTest/components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_ll_fmc.h" type="1"/>
+    <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_ll_usb.h" path="../../../../../../vmware-host/Shared Folders/GITHUB/Coocox/F4Disco - USBTest/components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_ll_usb.h" type="1"/>
+    <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal_i2c_ex.c" path="../../../../../../vmware-host/Shared Folders/GITHUB/Coocox/F4Disco - USBTest/components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_hal_i2c_ex.c" type="1"/>
+    <File name="components/cmsis_core/core_cm4.h" path="../../../../../../vmware-host/Shared Folders/GITHUB/Coocox/F4Disco - USBTest/components/coocox-master/cmsis_core/source/core_cm4.h" type="1"/>
+    <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal_flash.h" path="../../../../../../vmware-host/Shared Folders/GITHUB/Coocox/F4Disco - USBTest/components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_hal_flash.h" type="1"/>
+    <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal_spi.c" path="../../../../../../vmware-host/Shared Folders/GITHUB/Coocox/F4Disco - USBTest/components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_hal_spi.c" type="1"/>
+    <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal_pwr.h" path="../../../../../../vmware-host/Shared Folders/GITHUB/Coocox/F4Disco - USBTest/components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_hal_pwr.h" type="1"/>
+    <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal_hash_ex.c" path="../../../../../../vmware-host/Shared Folders/GITHUB/Coocox/F4Disco - USBTest/components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_hal_hash_ex.c" type="1"/>
+    <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal_adc_ex.c" path="../../../../../../vmware-host/Shared Folders/GITHUB/Coocox/F4Disco - USBTest/components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_hal_adc_ex.c" type="1"/>
+    <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_ll_sdmmc.c" path="../../../../../../vmware-host/Shared Folders/GITHUB/Coocox/F4Disco - USBTest/components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_ll_sdmmc.c" type="1"/>
+    <File name="main.c" path="../../../../../../vmware-host/Shared Folders/GITHUB/Coocox/F4Disco - USBTest/app/main.c" type="1"/>
+    <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal_rcc_ex.c" path="../../../../../../vmware-host/Shared Folders/GITHUB/Coocox/F4Disco - USBTest/components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_hal_rcc_ex.c" type="1"/>
+    <File name="usbdevice/usbd_cdc.h" path="Z:/GITHUB/Coocox/F4Disco - USBTest/app/usbdevice/usbd_cdc.h" type="1"/>
+    <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal_i2s.c" path="../../../../../../vmware-host/Shared Folders/GITHUB/Coocox/F4Disco - USBTest/components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_hal_i2s.c" type="1"/>
+    <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal_hash.h" path="../../../../../../vmware-host/Shared Folders/GITHUB/Coocox/F4Disco - USBTest/components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_hal_hash.h" type="1"/>
+    <File name="components/cmsis_core/core_cmInstr.h" path="../../../../../../vmware-host/Shared Folders/GITHUB/Coocox/F4Disco - USBTest/components/coocox-master/cmsis_core/source/core_cmInstr.h" type="1"/>
+    <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_ll_fmc.c" path="../../../../../../vmware-host/Shared Folders/GITHUB/Coocox/F4Disco - USBTest/components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_ll_fmc.c" type="1"/>
+    <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal_i2s_ex.h" path="../../../../../../vmware-host/Shared Folders/GITHUB/Coocox/F4Disco - USBTest/components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_hal_i2s_ex.h" type="1"/>
+    <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal_dac_ex.c" path="../../../../../../vmware-host/Shared Folders/GITHUB/Coocox/F4Disco - USBTest/components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_hal_dac_ex.c" type="1"/>
+    <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal_adc_ex.h" path="../../../../../../vmware-host/Shared Folders/GITHUB/Coocox/F4Disco - USBTest/components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_hal_adc_ex.h" type="1"/>
+    <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal_nor.h" path="../../../../../../vmware-host/Shared Folders/GITHUB/Coocox/F4Disco - USBTest/components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_hal_nor.h" type="1"/>
     <File name="components/cmsis_core" path="" type="2"/>
-    <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal_usart.h" path="components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_hal_usart.h" type="1"/>
-    <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal_irda.c" path="components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_hal_irda.c" type="1"/>
-    <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal_nand.c" path="components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_hal_nand.c" type="1"/>
-    <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal_tim.h" path="components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_hal_tim.h" type="1"/>
-    <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal_rng.c" path="components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_hal_rng.c" type="1"/>
-    <File name="components/cmsis_core/arm_common_tables.h" path="components/coocox-master/cmsis_core/source/arm_common_tables.h" type="1"/>
-    <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal_rcc_ex.h" path="components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_hal_rcc_ex.h" type="1"/>
+    <File name="components/cmsis_core/core_cmFunc.h" path="../../../../../../vmware-host/Shared Folders/GITHUB/Coocox/F4Disco - USBTest/components/coocox-master/cmsis_core/source/core_cmFunc.h" type="1"/>
+    <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal_usart.h" path="../../../../../../vmware-host/Shared Folders/GITHUB/Coocox/F4Disco - USBTest/components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_hal_usart.h" type="1"/>
+    <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal_irda.c" path="../../../../../../vmware-host/Shared Folders/GITHUB/Coocox/F4Disco - USBTest/components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_hal_irda.c" type="1"/>
+    <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal_tim.h" path="../../../../../../vmware-host/Shared Folders/GITHUB/Coocox/F4Disco - USBTest/components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_hal_tim.h" type="1"/>
+    <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal_nand.c" path="../../../../../../vmware-host/Shared Folders/GITHUB/Coocox/F4Disco - USBTest/components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_hal_nand.c" type="1"/>
+    <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal_rng.c" path="../../../../../../vmware-host/Shared Folders/GITHUB/Coocox/F4Disco - USBTest/components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_hal_rng.c" type="1"/>
+    <File name="components/cmsis_core/arm_common_tables.h" path="../../../../../../vmware-host/Shared Folders/GITHUB/Coocox/F4Disco - USBTest/components/coocox-master/cmsis_core/source/arm_common_tables.h" type="1"/>
+    <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal_rcc_ex.h" path="../../../../../../vmware-host/Shared Folders/GITHUB/Coocox/F4Disco - USBTest/components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_hal_rcc_ex.h" type="1"/>
     <File name="components/STM32F407xx_cmsisboot/Hal" path="" type="2"/>
-    <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal_sdram.c" path="components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_hal_sdram.c" type="1"/>
-    <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal_nor.c" path="components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_hal_nor.c" type="1"/>
-    <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal_cortex.c" path="components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_hal_cortex.c" type="1"/>
-    <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal_irda.h" path="components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_hal_irda.h" type="1"/>
-    <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal_pccard.h" path="components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_hal_pccard.h" type="1"/>
-    <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal_hash.c" path="components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_hal_hash.c" type="1"/>
-    <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal_i2s.h" path="components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_hal_i2s.h" type="1"/>
-    <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal_rtc_ex.h" path="components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_hal_rtc_ex.h" type="1"/>
-    <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_ll_fsmc.c" path="components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_ll_fsmc.c" type="1"/>
-    <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal_crc.c" path="components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_hal_crc.c" type="1"/>
-    <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal_wwdg.c" path="components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_hal_wwdg.c" type="1"/>
-    <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal_dcmi.c" path="components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_hal_dcmi.c" type="1"/>
-    <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal_hash_ex.h" path="components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_hal_hash_ex.h" type="1"/>
-    <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal_rng.h" path="components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_hal_rng.h" type="1"/>
-    <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal_dac.h" path="components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_hal_dac.h" type="1"/>
-    <File name="stm32f4xx_it.h" path="app/stm32f4xx_it.h" type="1"/>
-    <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal_global_macro.h" path="components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_hal_global_macro.h" type="1"/>
-    <File name="components/cmsis_core/core_cm0.h" path="components/coocox-master/cmsis_core/source/core_cm0.h" type="1"/>
-    <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal_dma.c" path="components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_hal_dma.c" type="1"/>
-    <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal_eth.c" path="components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_hal_eth.c" type="1"/>
-    <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal_sdram.h" path="components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_hal_sdram.h" type="1"/>
-    <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_ll_fsmc.h" path="components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_ll_fsmc.h" type="1"/>
-    <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal_cryp.c" path="components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_hal_cryp.c" type="1"/>
-    <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal_dma2d.c" path="components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_hal_dma2d.c" type="1"/>
-    <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal_pcd_ex.h" path="components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_hal_pcd_ex.h" type="1"/>
-    <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal_uart.c" path="components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_hal_uart.c" type="1"/>
-    <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal_dac_ex.h" path="components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_hal_dac_ex.h" type="1"/>
-    <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal_i2s_ex.c" path="components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_hal_i2s_ex.c" type="1"/>
-    <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal_dcmi.h" path="components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_hal_dcmi.h" type="1"/>
-    <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal_pcd.h" path="components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_hal_pcd.h" type="1"/>
-    <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal_pwr_ex.c" path="components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_hal_pwr_ex.c" type="1"/>
-    <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal_sd.c" path="components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_hal_sd.c" type="1"/>
-    <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal_sai.c" path="components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_hal_sai.c" type="1"/>
+    <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal_sdram.c" path="../../../../../../vmware-host/Shared Folders/GITHUB/Coocox/F4Disco - USBTest/components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_hal_sdram.c" type="1"/>
+    <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal_nor.c" path="../../../../../../vmware-host/Shared Folders/GITHUB/Coocox/F4Disco - USBTest/components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_hal_nor.c" type="1"/>
+    <File name="usbd_cdc_interface.h" path="Z:/GITHUB/Coocox/F4Disco - USBTest/app/usbd_cdc_interface.h" type="1"/>
+    <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal_cortex.c" path="../../../../../../vmware-host/Shared Folders/GITHUB/Coocox/F4Disco - USBTest/components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_hal_cortex.c" type="1"/>
+    <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal_irda.h" path="../../../../../../vmware-host/Shared Folders/GITHUB/Coocox/F4Disco - USBTest/components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_hal_irda.h" type="1"/>
+    <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal_pccard.h" path="../../../../../../vmware-host/Shared Folders/GITHUB/Coocox/F4Disco - USBTest/components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_hal_pccard.h" type="1"/>
+    <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal_rtc_ex.h" path="../../../../../../vmware-host/Shared Folders/GITHUB/Coocox/F4Disco - USBTest/components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_hal_rtc_ex.h" type="1"/>
+    <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal_hash.c" path="../../../../../../vmware-host/Shared Folders/GITHUB/Coocox/F4Disco - USBTest/components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_hal_hash.c" type="1"/>
+    <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal_i2s.h" path="../../../../../../vmware-host/Shared Folders/GITHUB/Coocox/F4Disco - USBTest/components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_hal_i2s.h" type="1"/>
+    <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_ll_fsmc.c" path="../../../../../../vmware-host/Shared Folders/GITHUB/Coocox/F4Disco - USBTest/components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_ll_fsmc.c" type="1"/>
+    <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal_crc.c" path="../../../../../../vmware-host/Shared Folders/GITHUB/Coocox/F4Disco - USBTest/components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_hal_crc.c" type="1"/>
+    <File name="usbd_conf.c" path="Z:/GITHUB/Coocox/F4Disco - USBTest/app/usbd_conf.c" type="1"/>
+    <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal_dcmi.c" path="../../../../../../vmware-host/Shared Folders/GITHUB/Coocox/F4Disco - USBTest/components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_hal_dcmi.c" type="1"/>
+    <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal_wwdg.c" path="../../../../../../vmware-host/Shared Folders/GITHUB/Coocox/F4Disco - USBTest/components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_hal_wwdg.c" type="1"/>
+    <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal_hash_ex.h" path="../../../../../../vmware-host/Shared Folders/GITHUB/Coocox/F4Disco - USBTest/components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_hal_hash_ex.h" type="1"/>
+    <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal_rng.h" path="../../../../../../vmware-host/Shared Folders/GITHUB/Coocox/F4Disco - USBTest/components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_hal_rng.h" type="1"/>
+    <File name="usbdevice/usbd_core.h" path="Z:/GITHUB/Coocox/F4Disco - USBTest/app/usbdevice/usbd_core.h" type="1"/>
+    <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal_dac.h" path="../../../../../../vmware-host/Shared Folders/GITHUB/Coocox/F4Disco - USBTest/components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_hal_dac.h" type="1"/>
+    <File name="stm32f4xx_it.h" path="Z:/GITHUB/Coocox/F4Disco - USBTest/app/stm32f4xx_it.h" type="1"/>
+    <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal_global_macro.h" path="../../../../../../vmware-host/Shared Folders/GITHUB/Coocox/F4Disco - USBTest/components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_hal_global_macro.h" type="1"/>
+    <File name="components/cmsis_core/core_cm0.h" path="../../../../../../vmware-host/Shared Folders/GITHUB/Coocox/F4Disco - USBTest/components/coocox-master/cmsis_core/source/core_cm0.h" type="1"/>
+    <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal_dma.c" path="../../../../../../vmware-host/Shared Folders/GITHUB/Coocox/F4Disco - USBTest/components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_hal_dma.c" type="1"/>
+    <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal_eth.c" path="../../../../../../vmware-host/Shared Folders/GITHUB/Coocox/F4Disco - USBTest/components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_hal_eth.c" type="1"/>
+    <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_ll_fsmc.h" path="../../../../../../vmware-host/Shared Folders/GITHUB/Coocox/F4Disco - USBTest/components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_ll_fsmc.h" type="1"/>
+    <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal_sdram.h" path="../../../../../../vmware-host/Shared Folders/GITHUB/Coocox/F4Disco - USBTest/components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_hal_sdram.h" type="1"/>
+    <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal_cryp.c" path="../../../../../../vmware-host/Shared Folders/GITHUB/Coocox/F4Disco - USBTest/components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_hal_cryp.c" type="1"/>
+    <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal_dma2d.c" path="../../../../../../vmware-host/Shared Folders/GITHUB/Coocox/F4Disco - USBTest/components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_hal_dma2d.c" type="1"/>
+    <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal_pcd_ex.h" path="../../../../../../vmware-host/Shared Folders/GITHUB/Coocox/F4Disco - USBTest/components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_hal_pcd_ex.h" type="1"/>
+    <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal_uart.c" path="../../../../../../vmware-host/Shared Folders/GITHUB/Coocox/F4Disco - USBTest/components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_hal_uart.c" type="1"/>
+    <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal_dac_ex.h" path="../../../../../../vmware-host/Shared Folders/GITHUB/Coocox/F4Disco - USBTest/components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_hal_dac_ex.h" type="1"/>
+    <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal_i2s_ex.c" path="../../../../../../vmware-host/Shared Folders/GITHUB/Coocox/F4Disco - USBTest/components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_hal_i2s_ex.c" type="1"/>
+    <File name="usbdevice/usbd_def.h" path="Z:/GITHUB/Coocox/F4Disco - USBTest/app/usbdevice/usbd_def.h" type="1"/>
+    <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal_dcmi.h" path="../../../../../../vmware-host/Shared Folders/GITHUB/Coocox/F4Disco - USBTest/components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_hal_dcmi.h" type="1"/>
+    <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal_pcd.h" path="../../../../../../vmware-host/Shared Folders/GITHUB/Coocox/F4Disco - USBTest/components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_hal_pcd.h" type="1"/>
+    <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal_pwr_ex.c" path="../../../../../../vmware-host/Shared Folders/GITHUB/Coocox/F4Disco - USBTest/components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_hal_pwr_ex.c" type="1"/>
+    <File name="usbdevice/usbd_cdc.c" path="Z:/GITHUB/Coocox/F4Disco - USBTest/app/usbdevice/usbd_cdc.c" type="1"/>
+    <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal_sd.c" path="../../../../../../vmware-host/Shared Folders/GITHUB/Coocox/F4Disco - USBTest/components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_hal_sd.c" type="1"/>
+    <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal_sai.c" path="../../../../../../vmware-host/Shared Folders/GITHUB/Coocox/F4Disco - USBTest/components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_hal_sai.c" type="1"/>
     <File name="components/STM32F407xx_cmsisboot" path="" type="2"/>
-    <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal_eth.h" path="components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_hal_eth.h" type="1"/>
-    <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal_uart.h" path="components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_hal_uart.h" type="1"/>
-    <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal_flash_ex.h" path="components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_hal_flash_ex.h" type="1"/>
-    <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal_pwr_ex.h" path="components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_hal_pwr_ex.h" type="1"/>
-    <File name="components/STM32F407xx_cmsisboot/startup_stm32f407xx.S" path="components/coocox-master/STM32F407xx_cmsisboot/source/startup_stm32f407xx.S" type="1"/>
-    <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal_pcd.c" path="components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_hal_pcd.c" type="1"/>
+    <File name="usbdevice/usbd_ioreq.c" path="Z:/GITHUB/Coocox/F4Disco - USBTest/app/usbdevice/usbd_ioreq.c" type="1"/>
+    <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal_eth.h" path="../../../../../../vmware-host/Shared Folders/GITHUB/Coocox/F4Disco - USBTest/components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_hal_eth.h" type="1"/>
+    <File name="usbdevice/usbd_ioreq.h" path="Z:/GITHUB/Coocox/F4Disco - USBTest/app/usbdevice/usbd_ioreq.h" type="1"/>
+    <File name="usbdevice/usbd_core.c" path="Z:/GITHUB/Coocox/F4Disco - USBTest/app/usbdevice/usbd_core.c" type="1"/>
+    <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal_uart.h" path="../../../../../../vmware-host/Shared Folders/GITHUB/Coocox/F4Disco - USBTest/components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_hal_uart.h" type="1"/>
+    <File name="syscalls" path="" type="2"/>
+    <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal_flash_ex.h" path="../../../../../../vmware-host/Shared Folders/GITHUB/Coocox/F4Disco - USBTest/components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_hal_flash_ex.h" type="1"/>
+    <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal_pwr_ex.h" path="../../../../../../vmware-host/Shared Folders/GITHUB/Coocox/F4Disco - USBTest/components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_hal_pwr_ex.h" type="1"/>
+    <File name="components/STM32F407xx_cmsisboot/startup_stm32f407xx.S" path="../../../../../../vmware-host/Shared Folders/GITHUB/Coocox/F4Disco - USBTest/components/coocox-master/STM32F407xx_cmsisboot/source/startup_stm32f407xx.S" type="1"/>
+    <File name="stm32f4xx_hal_msp.c" path="Z:/GITHUB/Coocox/F4Disco - USBTest/app/stm32f4xx_hal_msp.c" type="1"/>
     <File name="components" path="" type="2"/>
-    <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal_dma2d.h" path="components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_hal_dma2d.h" type="1"/>
-    <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal_iwdg.c" path="components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_hal_iwdg.c" type="1"/>
-    <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal_cryp.h" path="components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_hal_cryp.h" type="1"/>
-    <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal_sai.h" path="components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_hal_sai.h" type="1"/>
-    <File name="components/STM32F407xx_cmsisboot/system_stm32f4xx.c" path="components/coocox-master/STM32F407xx_cmsisboot/source/system_stm32f4xx.c" type="1"/>
-    <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal_nand.h" path="components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_hal_nand.h" type="1"/>
-    <File name="components/cmsis_core/arm_math.h" path="components/coocox-master/cmsis_core/source/arm_math.h" type="1"/>
+    <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal_pcd.c" path="../../../../../../vmware-host/Shared Folders/GITHUB/Coocox/F4Disco - USBTest/components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_hal_pcd.c" type="1"/>
+    <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal_dma2d.h" path="../../../../../../vmware-host/Shared Folders/GITHUB/Coocox/F4Disco - USBTest/components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_hal_dma2d.h" type="1"/>
+    <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal_iwdg.c" path="../../../../../../vmware-host/Shared Folders/GITHUB/Coocox/F4Disco - USBTest/components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_hal_iwdg.c" type="1"/>
+    <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal_cryp.h" path="../../../../../../vmware-host/Shared Folders/GITHUB/Coocox/F4Disco - USBTest/components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_hal_cryp.h" type="1"/>
+    <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal_sai.h" path="../../../../../../vmware-host/Shared Folders/GITHUB/Coocox/F4Disco - USBTest/components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_hal_sai.h" type="1"/>
+    <File name="usbd_cdc_interface.c" path="Z:/GITHUB/Coocox/F4Disco - USBTest/app/usbd_cdc_interface.c" type="1"/>
+    <File name="components/STM32F407xx_cmsisboot/system_stm32f4xx.c" path="../../../../../../vmware-host/Shared Folders/GITHUB/Coocox/F4Disco - USBTest/components/coocox-master/STM32F407xx_cmsisboot/source/system_stm32f4xx.c" type="1"/>
+    <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal_nand.h" path="../../../../../../vmware-host/Shared Folders/GITHUB/Coocox/F4Disco - USBTest/components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_hal_nand.h" type="1"/>
+    <File name="components/cmsis_core/arm_math.h" path="../../../../../../vmware-host/Shared Folders/GITHUB/Coocox/F4Disco - USBTest/components/coocox-master/cmsis_core/source/arm_math.h" type="1"/>
   </Files>
 </Project>

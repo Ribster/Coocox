@@ -5,6 +5,8 @@ GPIO_InitTypeDef GPIO_InitStruct;
 static void SystemClock_Config(void);
 void Error_Handler(void);
 
+USBD_HandleTypeDef  USBD_Device;
+
 int main(void)
 {
 	 /* This sample code shows how to use STM32F4xx GPIO HAL API to toggle PG6, PG7,
@@ -36,6 +38,21 @@ int main(void)
 
 	  HAL_GPIO_Init(GPIOD, &GPIO_InitStruct);
 
+
+	  /* Init Device Library */
+	  USBD_Init(&USBD_Device, &VCP_Desc, 0);
+
+	  /* Add Supported Class */
+	  USBD_RegisterClass(&USBD_Device, USBD_CDC_CLASS);
+
+	  /* Add CDC Interface Class */
+	  USBD_CDC_RegisterInterface(&USBD_Device, &USBD_CDC_fops);
+
+	  /* Start Device Process */
+	  USBD_Start(&USBD_Device);
+
+	  char sendString[] = "I'm sending this string, yay!\r\n";
+
 	  /* -3- Toggle PG.6, PG.7, PG10 and PG.12 IOs in an infinite loop */
 	  while (1)
 	  {
@@ -54,6 +71,8 @@ int main(void)
 	    HAL_GPIO_TogglePin(GPIOD, GPIO_PIN_15);
 	    /* Insert delay 100 ms */
 	    HAL_Delay(100);
+
+	    CDC_Itf_Send(sendString, strlen(sendString));
 	  }
 }
 

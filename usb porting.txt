@@ -1,0 +1,9 @@
+PINOUT!!
+USART2_TX
+USART2_RX
+
+USB
+
+Main.h -> all global defines
+It.h -> all interrupts
+It.c -> all interrupts

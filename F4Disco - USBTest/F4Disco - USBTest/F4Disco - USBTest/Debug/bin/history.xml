@@ -1,0 +1,77 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<history>
+   <processor signature="arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -g -Map=F4Disco - USBTest.map -O0 --gc-sections -lm -lgcc -lc -LC:\CooCox\CoIDE\configuration\ProgramData\F4Disco - USBTest -TC:\CooCox\CoIDE\configuration\ProgramData\F4Disco - USBTest/arm-gcc-link.ld -g">
+      <target file="F4Disco - USBTest.elf" lastModified="15337b8d770">
+         <source file="..\obj\stm32f4xx_hal_spi.o" lastModified="15337b87d98"/>
+         <source file="..\obj\stm32f4xx_hal_flash_ramfunc.o" lastModified="15337b87d98"/>
+         <source file="..\obj\stm32f4xx_hal_i2c.o" lastModified="15337b88180"/>
+         <source file="..\obj\stm32f4xx_hal_rng.o" lastModified="15337b88180"/>
+         <source file="..\obj\stm32f4xx_hal_ltdc.o" lastModified="15337b88180"/>
+         <source file="..\obj\stm32f4xx_hal_msp.o" lastModified="15337b88568"/>
+         <source file="..\obj\stm32f4xx_hal_iwdg.o" lastModified="15337b88568"/>
+         <source file="..\obj\stm32f4xx_hal_eth.o" lastModified="15337b88568"/>
+         <source file="..\obj\stm32f4xx_ll_fsmc.o" lastModified="15337b88950"/>
+         <source file="..\obj\stm32f4xx_hal_rtc.o" lastModified="15337b88950"/>
+         <source file="..\obj\stm32f4xx_hal_uart.o" lastModified="15337b88950"/>
+         <source file="..\obj\stm32f4xx_hal_tim.o" lastModified="15337b88d38"/>
+         <source file="..\obj\stm32f4xx_hal_hash_ex.o" lastModified="15337b88d38"/>
+         <source file="..\obj\stm32f4xx_hal_dma2d.o" lastModified="15337b88d38"/>
+         <source file="..\obj\stm32f4xx_ll_usb.o" lastModified="15337b89120"/>
+         <source file="..\obj\stm32f4xx_hal_smartcard.o" lastModified="15337b89120"/>
+         <source file="..\obj\stm32f4xx_hal_usart.o" lastModified="15337b89120"/>
+         <source file="..\obj\usbd_core.o" lastModified="15337aa3940"/>
+         <source file="..\obj\main.o" lastModified="15337b89508"/>
+         <source file="..\obj\stm32f4xx_hal_i2s_ex.o" lastModified="15337b89508"/>
+         <source file="..\obj\stm32f4xx_it.o" lastModified="15337b898f0"/>
+         <source file="..\obj\stm32f4xx_hal_flash.o" lastModified="15337b898f0"/>
+         <source file="..\obj\stm32f4xx_hal_pwr.o" lastModified="15337b89cd8"/>
+         <source file="..\obj\stm32f4xx_hal_can.o" lastModified="15337b89cd8"/>
+         <source file="..\obj\stm32f4xx_hal_irda.o" lastModified="15337b89cd8"/>
+         <source file="..\obj\stm32f4xx_hal_adc_ex.o" lastModified="15337b8a0c0"/>
+         <source file="..\obj\stm32f4xx_hal_dac.o" lastModified="15337b8a0c0"/>
+         <source file="..\obj\stm32f4xx_hal_sd.o" lastModified="15337b8a0c0"/>
+         <source file="..\obj\stm32f4xx_hal_rtc_ex.o" lastModified="15337b8a4a8"/>
+         <source file="..\obj\stm32f4xx_hal.o" lastModified="15337b8a4a8"/>
+         <source file="..\obj\stm32f4xx_hal_dma_ex.o" lastModified="15337b8a4a8"/>
+         <source file="..\obj\stm32f4xx_hal_rcc_ex.o" lastModified="15337b8a4a8"/>
+         <source file="..\obj\usbd_desc.o" lastModified="15337aa4cc8"/>
+         <source file="..\obj\usbd_conf.o" lastModified="15337aa50b0"/>
+         <source file="..\obj\stm32f4xx_hal_crc.o" lastModified="15337b8a890"/>
+         <source file="..\obj\stm32f4xx_hal_sdram.o" lastModified="15337b8a890"/>
+         <source file="..\obj\stm32f4xx_hal_dcmi.o" lastModified="15337b8a890"/>
+         <source file="..\obj\stm32f4xx_hal_rcc.o" lastModified="15337b8ac78"/>
+         <source file="..\obj\stm32f4xx_hal_flash_ex.o" lastModified="15337b8ac78"/>
+         <source file="..\obj\stm32f4xx_hal_cortex.o" lastModified="15337b8ac78"/>
+         <source file="..\obj\system_stm32f4xx.o" lastModified="15337b8ac78"/>
+         <source file="..\obj\syscalls.o" lastModified="15337ad36e0"/>
+         <source file="..\obj\stm32f4xx_hal_adc.o" lastModified="15337b8b060"/>
+         <source file="..\obj\stm32f4xx_hal_i2s.o" lastModified="15337b8b060"/>
+         <source file="..\obj\stm32f4xx_hal_pcd.o" lastModified="15337b8b060"/>
+         <source file="..\obj\stm32f4xx_hal_cryp.o" lastModified="15337b8b448"/>
+         <source file="..\obj\stm32f4xx_hal_pcd_ex.o" lastModified="15337b8b448"/>
+         <source file="..\obj\stm32f4xx_hal_gpio.o" lastModified="15337b8b448"/>
+         <source file="..\obj\startup_stm32f407xx.o" lastModified="15337b8b448"/>
+         <source file="..\obj\usbd_cdc.o" lastModified="15337aa6050"/>
+         <source file="..\obj\stm32f4xx_hal_i2c_ex.o" lastModified="15337b8b830"/>
+         <source file="..\obj\stm32f4xx_hal_nor.o" lastModified="15337b8b830"/>
+         <source file="..\obj\stm32f4xx_hal_nand.o" lastModified="15337b8b830"/>
+         <source file="..\obj\stm32f4xx_hal_pccard.o" lastModified="15337b8bc18"/>
+         <source file="..\obj\stm32f4xx_hal_sram.o" lastModified="15337b8bc18"/>
+         <source file="..\obj\stm32f4xx_hal_dac_ex.o" lastModified="15337b8bc18"/>
+         <source file="..\obj\usbd_cdc_interface.o" lastModified="15337b8c000"/>
+         <source file="..\obj\stm32f4xx_hal_hcd.o" lastModified="15337b8c3e8"/>
+         <source file="..\obj\stm32f4xx_hal_pwr_ex.o" lastModified="15337b8c3e8"/>
+         <source file="..\obj\stm32f4xx_hal_tim_ex.o" lastModified="15337b8c7d0"/>
+         <source file="..\obj\stm32f4xx_ll_fmc.o" lastModified="15337b8c7d0"/>
+         <source file="..\obj\stm32f4xx_ll_sdmmc.o" lastModified="15337b8c7d0"/>
+         <source file="..\obj\usbd_ctlreq.o" lastModified="15337aa77c0"/>
+         <source file="..\obj\stm32f4xx_hal_cryp_ex.o" lastModified="15337b8c7d0"/>
+         <source file="..\obj\stm32f4xx_hal_hash.o" lastModified="15337b8cbb8"/>
+         <source file="..\obj\stm32f4xx_hal_sai.o" lastModified="15337b8cbb8"/>
+         <source file="..\obj\stm32f4xx_hal_msp_template.o" lastModified="15337b8cbb8"/>
+         <source file="..\obj\stm32f4xx_hal_dma.o" lastModified="15337b8cfa0"/>
+         <source file="..\obj\usbd_ioreq.o" lastModified="15337aa8378"/>
+         <source file="..\obj\stm32f4xx_hal_wwdg.o" lastModified="15337b8cfa0"/>
+      </target>
+   </processor>
+</history>
