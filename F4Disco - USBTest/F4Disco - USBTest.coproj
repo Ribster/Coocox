@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <Project version="2G - 2.0.3" name="F4Disco - USBTest">
   <Target name="F4Disco - USBTest" isCurrent="1">
-    <Device manufacturerId="9" manufacturerName="ST" chipId="261" chipName="STM32F407VG" boardId="" boardName="" boardUrl="" coreId="4" coreName="Cortex M4"/>
+    <Device manufacturerId="9" manufacturerName="ST" chipId="344" chipName="STM32F407VG" boardId="" boardName=""/>
     <BuildOption>
       <Compile>
         <Option name="OptimizationLevel" value="0"/>
@@ -15,6 +15,7 @@
         </Includepaths>
         <DefinedSymbols>
           <Define name="STM32F407VG"/>
+          <Define name="STM32F4XX"/>
         </DefinedSymbols>
       </Compile>
       <Link useDefault="0">
@@ -24,6 +25,7 @@
         <Option name="nostartfiles" value="0"/>
         <Option name="LTO" value="0"/>
         <Option name="IsNewStartupCode" value="1"/>
+        <Option name="Library" value="Use base C Library"/>
         <LinkedLibraries/>
         <MemoryAreas debugInFlashNotRAM="1">
           <Memory name="IROM1" type="ReadOnly" size="0x00100000" startValue="0x08000000"/>
@@ -31,7 +33,7 @@
           <Memory name="IROM2" type="ReadOnly" size="" startValue=""/>
           <Memory name="IRAM2" type="ReadWrite" size="0x00010000" startValue="0x10000000"/>
         </MemoryAreas>
-        <LocateLinkFile path="c:/users/robbe van assche/appdata/roaming/coocox/coide/configuration/programdata/f4disco - usbtest/arm-gcc-link.ld" type="0"/>
+        <LocateLinkFile path="c:/coocox/coide/configuration/programdata/f4disco - usbtest/arm-gcc-link.ld" type="0"/>
       </Link>
       <Output>
         <Option name="OutputFileType" value="0"/>
@@ -61,21 +63,20 @@
       <Option name="org.coocox.codebugger.gdbjtag.core.portNumber" value="2009"/>
       <Option name="org.coocox.codebugger.gdbjtag.core.autoDownload" value="1"/>
       <Option name="org.coocox.codebugger.gdbjtag.core.verify" value="1"/>
-      <Option name="org.coocox.codebugger.gdbjtag.core.downloadFuction" value="Erase Effected"/>
-      <Option name="org.coocox.codebugger.gdbjtag.core.defaultAlgorithm" value="C:\Users\Robbe Van Assche\AppData\Roaming\CooCox\CoIDE\config\flash\CooCox-Flash\CoIDE_STM32F4xx_1024K\STM32F4xx_1024.elf"/>
+      <Option name="org.coocox.codebugger.gdbjtag.core.downloadFuction" value="Erase Full Chip"/>
+      <Option name="org.coocox.codebugger.gdbjtag.core.defaultAlgorithm" value="STM32F4xx_1024.elf"/>
+      <Option name="org.coocox.codebugger.gdbjtag.coredebugInRamInitCommands" value="cd Z:/GITHUB/Coocox/F4Disco - USBTest/F4Disco - USBTest/Debug/bin
+restore F4Disco - USBTest.elf
+set {unsigned int*}0xE000ED08 = 0x20000000
+set $sp = {unsigned int*}0x20000000
+set $pc = {unsigned int*}0x20000004
+"/>
     </DebugOption>
     <ExcludeFile/>
   </Target>
-  <Components path="./">
-    <Component id="97" name="cmsis_core" path="" type="BasicComponet"/>
-    <Component id="100" name="Retarget_printf" path="" type="BasicComponet"/>
-    <Component id="101" name="Semihosting" path="" type="BasicComponet"/>
-    <Component id="128" name="STM32F407xx_cmsisboot" path="" type="BasicComponet"/>
-  </Components>
-  <LocalComponents/>
+  <Components path="./"/>
   <Files>
     <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_ll_usb.c" path="components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_ll_usb.c" type="1"/>
-    <File name="components/Retarget_printf/printf.c" path="components/coocox-master/Retarget_printf/source/printf.c" type="1"/>
     <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal.c" path="components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_hal.c" type="1"/>
     <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal_sram.c" path="components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_hal_sram.c" type="1"/>
     <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal_flash_ex.c" path="components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_hal_flash_ex.c" type="1"/>
@@ -93,9 +94,10 @@
     <File name="components/STM32F407xx_cmsisboot/stm32f4xx.h" path="components/coocox-master/STM32F407xx_cmsisboot/source/stm32f4xx.h" type="1"/>
     <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal_msp_template.c" path="components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_hal_msp_template.c" type="1"/>
     <File name="components/cmsis_core/core_sc300.h" path="components/coocox-master/cmsis_core/source/core_sc300.h" type="1"/>
+    <File name="main.h" path="app/main.h" type="1"/>
     <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal_tim_ex.h" path="components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_hal_tim_ex.h" type="1"/>
     <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal_gpio.c" path="components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_hal_gpio.c" type="1"/>
-    <File name="main.h" path="app/main.h" type="1"/>
+    <File name="stm32f4xx_it.c" path="app/stm32f4xx_it.c" type="1"/>
     <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal_dac.c" path="components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_hal_dac.c" type="1"/>
     <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal_spi.h" path="components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_hal_spi.h" type="1"/>
     <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal_i2c.h" path="components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_hal_i2c.h" type="1"/>
@@ -136,9 +138,9 @@
     <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal_crc.h" path="components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_hal_crc.h" type="1"/>
     <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal_sram.h" path="components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_hal_sram.h" type="1"/>
     <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal.h" path="components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_hal.h" type="1"/>
+    <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal_rtc.c" path="components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_hal_rtc.c" type="1"/>
     <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal_flash_ramfunc.h" path="components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_hal_flash_ramfunc.h" type="1"/>
     <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_ll_fmc.h" path="components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_ll_fmc.h" type="1"/>
-    <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal_rtc.c" path="components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_hal_rtc.c" type="1"/>
     <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_ll_usb.h" path="components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_ll_usb.h" type="1"/>
     <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal_i2c_ex.c" path="components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_hal_i2c_ex.c" type="1"/>
     <File name="components/cmsis_core/core_cm4.h" path="components/coocox-master/cmsis_core/source/core_cm4.h" type="1"/>
@@ -152,9 +154,9 @@
     <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal_rcc_ex.c" path="components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_hal_rcc_ex.c" type="1"/>
     <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal_hash.h" path="components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_hal_hash.h" type="1"/>
     <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal_i2s.c" path="components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_hal_i2s.c" type="1"/>
+    <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_ll_fmc.c" path="components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_ll_fmc.c" type="1"/>
     <File name="components/cmsis_core/core_cmInstr.h" path="components/coocox-master/cmsis_core/source/core_cmInstr.h" type="1"/>
     <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal_i2s_ex.h" path="components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_hal_i2s_ex.h" type="1"/>
-    <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_ll_fmc.c" path="components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_ll_fmc.c" type="1"/>
     <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal_dac_ex.c" path="components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_hal_dac_ex.c" type="1"/>
     <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal_adc_ex.h" path="components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_hal_adc_ex.h" type="1"/>
     <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal_nor.h" path="components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_hal_nor.h" type="1"/>
@@ -183,14 +185,14 @@
     <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal_hash_ex.h" path="components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_hal_hash_ex.h" type="1"/>
     <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal_rng.h" path="components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_hal_rng.h" type="1"/>
     <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal_dac.h" path="components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_hal_dac.h" type="1"/>
+    <File name="stm32f4xx_it.h" path="app/stm32f4xx_it.h" type="1"/>
     <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal_global_macro.h" path="components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_hal_global_macro.h" type="1"/>
     <File name="components/cmsis_core/core_cm0.h" path="components/coocox-master/cmsis_core/source/core_cm0.h" type="1"/>
-    <File name="components/Semihosting/semihosting.h" path="components/coocox-master/Semihosting/source/semihosting.h" type="1"/>
     <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal_dma.c" path="components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_hal_dma.c" type="1"/>
     <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal_eth.c" path="components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_hal_eth.c" type="1"/>
+    <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal_sdram.h" path="components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_hal_sdram.h" type="1"/>
     <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_ll_fsmc.h" path="components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_ll_fsmc.h" type="1"/>
     <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal_cryp.c" path="components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_hal_cryp.c" type="1"/>
-    <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal_sdram.h" path="components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_hal_sdram.h" type="1"/>
     <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal_dma2d.c" path="components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_hal_dma2d.c" type="1"/>
     <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal_pcd_ex.h" path="components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_hal_pcd_ex.h" type="1"/>
     <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal_uart.c" path="components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_hal_uart.c" type="1"/>
@@ -203,10 +205,7 @@
     <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal_sai.c" path="components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_hal_sai.c" type="1"/>
     <File name="components/STM32F407xx_cmsisboot" path="" type="2"/>
     <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal_eth.h" path="components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_hal_eth.h" type="1"/>
-    <File name="components/Retarget_printf" path="" type="2"/>
     <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal_uart.h" path="components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_hal_uart.h" type="1"/>
-    <File name="components/Semihosting/semihosting.c" path="components/coocox-master/Semihosting/source/semihosting.c" type="1"/>
-    <File name="components/Semihosting" path="" type="2"/>
     <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal_flash_ex.h" path="components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_hal_flash_ex.h" type="1"/>
     <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal_pwr_ex.h" path="components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_hal_pwr_ex.h" type="1"/>
     <File name="components/STM32F407xx_cmsisboot/startup_stm32f407xx.S" path="components/coocox-master/STM32F407xx_cmsisboot/source/startup_stm32f407xx.S" type="1"/>
@@ -214,12 +213,10 @@
     <File name="components" path="" type="2"/>
     <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal_dma2d.h" path="components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_hal_dma2d.h" type="1"/>
     <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal_iwdg.c" path="components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_hal_iwdg.c" type="1"/>
-    <File name="components/Semihosting/sh_cmd.s" path="components/coocox-master/Semihosting/source/sh_cmd.s" type="1"/>
     <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal_cryp.h" path="components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_hal_cryp.h" type="1"/>
     <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal_sai.h" path="components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_hal_sai.h" type="1"/>
     <File name="components/STM32F407xx_cmsisboot/system_stm32f4xx.c" path="components/coocox-master/STM32F407xx_cmsisboot/source/system_stm32f4xx.c" type="1"/>
     <File name="components/STM32F407xx_cmsisboot/Hal/stm32f4xx_hal_nand.h" path="components/coocox-master/STM32F407xx_cmsisboot/source/Hal/stm32f4xx_hal_nand.h" type="1"/>
     <File name="components/cmsis_core/arm_math.h" path="components/coocox-master/cmsis_core/source/arm_math.h" type="1"/>
   </Files>
-  <Bookmarks/>
 </Project>
