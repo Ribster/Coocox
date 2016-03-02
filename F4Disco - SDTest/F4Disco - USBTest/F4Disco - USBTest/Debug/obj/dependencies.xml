@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<dependencies>
+   <includePath signature="/I\\vmware-host\Shared Folders\GITHUB\Coocox\F4Disco - Blinky\components\coocox-master /I\\vmware-host\Shared Folders\GITHUB\Coocox\F4Disco - Blinky\components\coocox-master\STM32F407xx_cmsisboot /I\\vmware-host\Shared Folders\GITHUB\Coocox\F4Disco - Blinky\components\coocox-master\STM32F407xx_cmsisboot\source\Hal /I\\vmware-host\Shared Folders\GITHUB\Coocox\F4Disco - Blinky\components\coocox-master\cmsis_core\source /I\\vmware-host\Shared Folders\GITHUB\Coocox\F4Disco - Blinky /I\\vmware-host\Shared Folders\GITHUB\Coocox\F4Disco - Blinky\components\coocox-master\STM32F407xx_cmsisboot\source /I\\vmware-host\Shared Folders\GITHUB\Coocox\F4Disco - Blinky\app /I\\vmware-host\Shared Folders\GITHUB\Coocox /I\\vmware-host\Shared Folders\GITHUB\Coocox\F4Disco - Blinky\components\coocox-master\cmsis_core">
+      <source file="..\..\..\..\syscalls\syscalls.c" lastModified="15337bf3458">
+      </source>
+   </includePath>
+</dependencies>
